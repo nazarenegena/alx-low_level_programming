@@ -13,7 +13,7 @@ if (n <= 15 && n >= 0)
 {
 for (j = 0; i <= n; j++)
 {
-int prod = j * i;
+int prod = (j * i);
 if (j == 0)
 {
 _putchar('0');
