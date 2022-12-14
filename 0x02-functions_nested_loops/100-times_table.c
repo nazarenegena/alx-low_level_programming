@@ -29,7 +29,7 @@ _putchar('0' + prod);
 else if (prod > 99)
 {
 _putchar(',');
-_putcahr(' ');
+_putchar(' ');
 _putchar('0' + (prod / 100));
 _putchar('0' + ((prod / 10) % 10));
 _putchar('0' + (prod % 10));
@@ -41,7 +41,6 @@ _putchar(' ');
 _putchar(' ');
 _putchar('0' + (prod / 10));
 _putchar('0' + (prod % 10));
-}
 }
 _putchar('\n');
 }
