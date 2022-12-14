@@ -1,12 +1,10 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_alphabet - prints alphabet
- *
- * Return :Always 0 (sucess)
- *
+ * main - Prints the alphabet
+ * Return: Always (Success)
  */
-void print_alphabet(void)
+int main(void)
 {
 char i;
 for (i = 'a'; i <= 'z'; i++)
@@ -14,4 +12,5 @@ for (i = 'a'; i <= 'z'; i++)
 _putchar(i);
 }
 _putchar('\n');
+return (0);
 }
