@@ -1,0 +1,26 @@
+#executable name school
+#varible names :
+#CC, SRC, OBJ, NAME, RM
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+.PHONY: all clean oclean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
